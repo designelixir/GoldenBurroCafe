@@ -48,6 +48,9 @@ h2 {
 }
 h3 {font-weight: 100; font-size: 18px; line-height: 24px;}
 p strong {font-weight: 600;}
+i {font-family: "ernst", sans-serif;
+    font-weight: inherit;
+    font-style: italic;}
 
 .hover:hover {cursor: pointer; transform: scale(1.05);}
 .hover {cursor: pointer;}
