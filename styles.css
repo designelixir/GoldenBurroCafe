@@ -1,0 +1,82 @@
+* {box-sizing: border-box;
+    font-family: "ernst", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html {max-width: 100vw; overflow-x: hidden; }
+body {width: 100%; padding: 2.5vw; margin: 0px; background-color: tan;}
+main { width: 100%;}
+:root {
+    --gold: #FADD60;
+    --font: 'Arial', sans-serif;
+    --navy: #110D39;
+    --lightgold: #F2E6B1;
+    --tan: #863B32; 
+}
+
+.flex-center-center {display: flex; align-items: center; justify-content: center; flex:1}
+.flex-center-end {display: flex; align-items: center; justify-content: flex-end; flex:1}
+.flex-center-start {display: flex; align-items: center; justify-content: flex-start; flex:1}
+.flex-center-spacebetween {display: flex; align-items: center; justify-content: space-between; flex:1}
+.flex-center-spaceevenly {display: flex; align-items: center; justify-content: space-evenly; flex:1}
+
+.flex-start-center {display: flex; align-items: flex-start; justify-content: center; flex:1}
+.flex-start-start {display: flex; align-items: flex-start; justify-content: flex-start; flex:1;}
+.flex-start-end {display: flex; align-items: flex-start; justify-content: flex-end; flex:1;}
+.flex-start-spacebetween {display: flex; align-items: flex-start; justify-content: space-between; flex:1;}
+.flex-start-spaceevenly {display: flex; align-items: flex-start; justify-content: space-evenly; flex:1;}
+
+.flex-end-center {display: flex; align-items: flex-end; justify-content: center; flex:1;}
+.flex-end-start {display: flex; align-items: flex-end; justify-content: flex-start; flex:1;}
+.flex-end-end {display: flex; align-items: flex-end; justify-content: flex-end; flex:1;}
+.flex-end-spacebetween {display: flex; align-items: flex-end; justify-content: space-between; flex:1;}
+.flex-end-spaceevenly {display: flex; align-items: flex-end; justify-content: space-evenly; flex:1;}
+
+
+.flex-column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap}
+.no-flex-grow {flex: unset;}
+
+
+h1 {
+    font-size: 36px; line-height: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px; line-height: 32px;
+}
+h3 {font-weight: 100; font-size: 18px; line-height: 24px;}
+p strong {font-weight: 600;}
+
+.hover:hover {cursor: pointer; transform: scale(1.05);}
+.hover {cursor: pointer;}
+.box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.5);}
+.text-shadow {text-shadow: 0 0 2px rgba(0,0,0,0.5);}
+.centered-text {text-align: center;}
+.active-link {text-decoration: underline;}
+.white-text {color: white;}
+.basic-padding {padding: 25px;}
+
+
+button {background: var(--gold); padding: 15px; cursor: pointer; border-radius: 5px; border: unset; font-size: 18px;}
+button:hover {background: var(--lightgold);  font-weight: 500;}
+
+#designElixirCredits {text-decoration: none; font-size: 12px; color: black;}
+
+
+
+.hero {width: 100%;  height: 50vh; min-height: 500px;  background-image: url('assets/golden-burro-fixed.png'); background-size: cover; background-position: center 20%;}
+.hero-content { padding: 75px 25px 25px; margin-top: -200px;}
+.gradient {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 1%, rgba(255,255,255,0.7751937984496124) 17%, rgba(255,255,255,1) 30%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 1%, rgba(255,255,255,0.7751937984496124) 17%, rgba(255,255,255,1) 30%);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 1%, rgba(255,255,255,0.7751937984496124) 17%, rgba(255,255,255,1) 30%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1); 
+}
+
+
+.fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
